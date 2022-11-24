@@ -1,0 +1,5 @@
+
+#textoclaro{
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+}

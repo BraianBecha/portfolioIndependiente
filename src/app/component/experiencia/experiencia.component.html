@@ -1,0 +1,25 @@
+<div class="tarjetastyle">
+
+    
+        <div *ngFor="let exp of experiencias">
+    
+            <div class="card text-bg-dark mb-3" style="width: auto">
+                <div class="card-body">
+                  <h5 class="card-title">{{exp.titulo}}</h5>
+                  <h6 class="card-subtitle mb-2 text-muted"></h6>
+                  <p class="card-text">{{exp.descripcion}}</p>
+                  <p class="card-text">{{exp.empresa}}</p>
+                  <p class="card-text text-muted">Inicio: {{exp.fechainicio}}</p>
+                  <p class="card-text text-muted">Fin: {{exp.fechafin}} </p>
+                  <a href="#" class="card-link">Card link</a>
+                  <a href="#" class="card-link">Another link</a>
+                </div>
+              </div>
+              
+         
+          
+            
+            </div>
+      
+    </div>
+   
