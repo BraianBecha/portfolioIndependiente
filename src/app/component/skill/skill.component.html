@@ -1,0 +1,54 @@
+  
+  <div class=" card container-xl wrapper" style="margin-top: 10%; margin-bottom: 30%;"  >
+  
+  <div >
+    <div class="card-title ">
+      <h5>Hard</h5> 
+    </div>
+  
+    <div *ngFor="let skill of serieskill">
+
+      <ng-container *ngIf="skill.tipo == 0 ">
+
+        <div class="card mb-3 text-bg-dark " style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title">{{skill.nombre}}</h5>
+            <div class="progress"> 
+              <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.ratio}}%"></div>
+              </div>
+          </div>
+        </div>
+      </ng-container>
+      </div>
+    
+    
+    </div>
+      
+      <div >
+        <div class="card-title  ">
+          <H5>Soft </H5>
+        </div> 
+        
+          <div *ngFor="let skill of serieskill">
+      
+            <ng-container *ngIf="skill.tipo == 1 ">
+      
+              <div class="card mb-3 text-bg-dark" style="width: 18rem;">
+                <div class="card-body">
+                  <h5 class="card-title">{{skill.nombre}}</h5>
+                 <div class="progress">  
+                  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: {{skill.ratio}}%"></div>
+                </div>
+                
+                </div>
+              </div>
+            
+            </ng-container>
+          
+          </div>
+        
+      </div>
+
+</div>
+
+  
