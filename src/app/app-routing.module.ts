@@ -6,11 +6,13 @@ import { IniciarSesionComponent } from './component/iniciar-sesion/iniciar-sesio
 import { NotFoundComponentComponent } from './component/not-found-component/not-found-component.component';
 import { EducacionComponent } from './component/educacion/educacion.component';
 import { ExperienciaComponent } from './component/experiencia/experiencia.component';
+import { SkillComponent } from './component/skill/skill.component';
 
 
 
 const appRoutes: Routes = [
   { path: 'portada', component: PortadaComponent },
+  { path: 'skills', component: SkillComponent },
   { path: 'proyectos', component: ProyectoComponent },  
   { path: 'educacion', component: EducacionComponent },
   { path: 'experiencia', component: ExperienciaComponent },  

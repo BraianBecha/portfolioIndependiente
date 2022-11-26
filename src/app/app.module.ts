@@ -18,6 +18,7 @@ import { PieComponent } from './component/pie/pie.component';
 import{HttpClient, HttpClientModule} from '@angular/common/http';
 import { ProyectoServService } from './servicios/proyecto-serv.service';
 import { NotFoundComponentComponent } from './component/not-found-component/not-found-component.component';
+import { SkillComponent } from './component/skill/skill.component';
 
 
 
@@ -32,7 +33,8 @@ import { NotFoundComponentComponent } from './component/not-found-component/not-
     NotFoundComponentComponent,
     ToolbarComponent,
     BannerComponent,
-    PieComponent
+    PieComponent,
+    SkillComponent
   ],
   imports: [
     

@@ -18,7 +18,7 @@ export class ProyectoComponent implements OnInit {
     this.getProy();
   }
   getProy(): void {
-    this.ProyectoService.getProyectos().subscribe(((proyectos:Proyecto[]) =>(this.proyectos = proyectos as Proyecto[])));
+    this.ProyectoService.getProyectos().subscribe(((data:Proyecto[]) => {this.proyectos = data as Proyecto[]}));
     console.log(this.proyectos );
   }
 
