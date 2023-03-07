@@ -9,14 +9,17 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionServService {
-URL="http://localhost:8080/";
+URL='http://localhost:8080/';
    
 
   
-  getProyectos(): Observable<Educacion[]>{
-    return this.http.get<Educacion[]>(`http://localhost:8080/ver/proyectos`)
+  getEducacion(): Observable<Educacion[]>{
+    return this.http.get<Educacion[]>(`${this.URL}ver/educacion`)
    
   }
+  
+
+
 
   constructor(private http:HttpClient) { }
 }

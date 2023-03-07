@@ -7,17 +7,18 @@ import { NotFoundComponentComponent } from './component/not-found-component/not-
 import { EducacionComponent } from './component/educacion/educacion.component';
 import { ExperienciaComponent } from './component/experiencia/experiencia.component';
 import { SkillComponent } from './component/skill/skill.component';
+import { AppComponent } from './app.component';
 
 
 
 const appRoutes: Routes = [
+  { path: '', component: IniciarSesionComponent,pathMatch:'full'},
   { path: 'portada', component: PortadaComponent },
-  { path: 'skills', component: SkillComponent },
+  { path: 'skill', component: SkillComponent },
   { path: 'proyectos', component: ProyectoComponent },  
   { path: 'educacion', component: EducacionComponent },
   { path: 'experiencia', component: ExperienciaComponent },  
-  {path:'iniciar-sesion', component: IniciarSesionComponent},
-  {path: '', component: IniciarSesionComponent,pathMatch:'full'},
+  { path:'iniciar-sesion', component: IniciarSesionComponent},  
   { path: '**', component:NotFoundComponentComponent} 
 ];
 

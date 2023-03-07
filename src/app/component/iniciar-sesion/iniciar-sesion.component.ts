@@ -13,7 +13,7 @@ export class IniciarSesionComponent implements OnInit {
   name = new FormControl('');
   formBuilder = new FormBuilder
   eMailUsuarioControl = new FormControl('');
-  form : FormGroup;
+   form : FormGroup;
 
   constructor(private formbuilder : FormBuilder) {
 

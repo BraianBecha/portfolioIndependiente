@@ -8,12 +8,12 @@ import { Observable } from 'rxjs';
 export class PersonaServService {
 
   
-  URL='http://localhost:8080';
+  URL='http://localhost:8080/';
   id='1';
 
 
   getPersona(): Observable<Persona>{
-    return this.http.get<Persona>(`${this.URL}/buscar/persona/${this.id}`);
+    return this.http.get<Persona>(`${this.URL}buscar/persona/${this.id}`);
    
   }
 

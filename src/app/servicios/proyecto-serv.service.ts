@@ -19,11 +19,11 @@ const httpOptions = {
 export class ProyectoServService {
 
 
-URL='http://localhost:8080/ver/proyectos';
+URL='http://localhost:8080/';
 
 
   getProyectos(): Observable<Proyecto[]>{
-    return this.http.get<Proyecto[]>(`http://localhost:8080/ver/proyectos`)
+    return this.http.get<Proyecto[]>(`${this.URL}ver/proyectos`)
    
   }
 

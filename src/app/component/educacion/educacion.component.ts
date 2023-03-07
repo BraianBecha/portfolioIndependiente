@@ -13,7 +13,8 @@ export class EducacionComponent implements OnInit {
 
   constructor(private Educacionservice :EducacionServService) { }
 
-geteduc(){this.Educacionservice.getProyectos().subscribe((historiaeduc:Educacion[])=>{this.historiaeduc=historiaeduc as Educacion[]})}
+geteduc()
+{this.Educacionservice.getEducacion().subscribe((historiaeduc:Educacion[])=>{this.historiaeduc=historiaeduc as Educacion[]})}
 
 
 

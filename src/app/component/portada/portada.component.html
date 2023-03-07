@@ -1,13 +1,16 @@
-<div style=" margin-bottom: 30%" >        
+      
              <div class="responsive-banner" >
               <img class="banner"  alt="fotob" src="{{persona.image_background_header}}" > 
-              <div class="btn-edit" onclick="cambiar_parrafo()"><i class="fa fa-pen" ></i></div>
+
+
+              <div class="btn-edit" onclick="cambiar_parrafo()"><a href=""> <i class="fa fa-pen btn-edit"  onclick="cambiar_parrafo()"></i> </a>
             </div>  
+            </div>
              
              
     <div class="card container-xl" style="margin-top: 3%;">
                    <div  class="card-img-top">
-                   <img class="perfil "  src="{{persona.imagen_perfil}}" alt="fotoc" style="float: up;"> <i class="fa fa-pen" ></i>
+                   <img class="perfil "  src="{{persona.imagen_perfil}}" alt="fotoc" style="float: up;">  <a href=""> <i class="fa fa-pen" ></i></a>
                    <div class="btn-edit" onclick="cambiar_parrafo()"> 
                     </div>
                              <!-- <div style="float;" class="position-absolute bottom-50 end-50 btn-edit" onclick="cambiar_parrafo()"> 
@@ -20,7 +23,7 @@
 
 
                                  <div class="card-body">
-                                  <h3 class="card-title"> {{persona.nombre}} {{persona.apellido}}  <i class="fa fa-pen btn-edit"  onclick="cambiar_parrafo()"></i> 
+                                  <h3 class="card-title"> {{persona.nombre}} {{persona.apellido}}  <a href=""> <i class="fa fa-pen btn-edit"  onclick="cambiar_parrafo()"></i> </a>
                                             
 
                                   </h3> 
@@ -29,9 +32,9 @@
                      
                        
                            
-                                       <h5 class="card-subtitle mb-2 text-muted">{{persona.ocupacion}}</h5>
+                                       <h5 class="card-subtitle mb-2 text-muted">{{persona.ocupacion}}</h5> <a href=""> <i class="fa fa-pen btn-edit"  onclick="cambiar_parrafo()"></i> </a>
                            
-                                       <p class="card-text">{{persona.sobre_mi}}</p>
+                                       <p class="card-text">{{persona.sobre_mi}}</p> <a href=""> <i class="fa fa-pen btn-edit"  onclick="cambiar_parrafo()"></i> </a>
                      
                                  </div>
                               </div>
@@ -41,8 +44,8 @@
           </div>
           
 
-          
-</div>
+
+
 
  
 

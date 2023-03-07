@@ -8,11 +8,11 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillserviceService {
-URL = "http://localhost:8080";
+URL ='http://localhost:8080/';
 
 getskills():Observable<Skill[]>{
   //return this.http.get<Skill[]>(`${this.URL}"/ver/skills"`)
-  return this.http.get<Skill[]>(`http://localhost:8080/ver/skills`)
+  return this.http.get<Skill[]>(`${this.URL}ver/skills`)
  // http://localhost:8080/ver/skills
 }
 

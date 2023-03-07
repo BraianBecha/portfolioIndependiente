@@ -7,14 +7,24 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ExperienciaServService {
-  URL='http://localhost:8080/ver/proyectos';
+  URL='http://localhost:8080/';
 
 
   getExperiencias(): Observable<Experiencia[]>{
-    return this.http.get<Experiencia[]>(`http://localhost:8080/ver/experiencia`)
+    return this.http.get<Experiencia[]>(`${this.URL}ver/experiencia`)
    
   }
 
+  
+  addExperiencia(edu : Experiencia): Observable<Experiencia> {
+    return this.http.post<Experiencia>(`${this.URL}new/experiencia`, edu)
+      
+  }
+  deleteExperiencia(id: number): Observable<Experiencia> {
+    const url = `${this.URL}/delete/experiencia/${id}`; 
+    return this.http.delete<Experiencia>(`${url}`);
+      
+  }
   constructor(private http:HttpClient) { }
 }
 
