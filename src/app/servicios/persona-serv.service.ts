@@ -16,6 +16,13 @@ export class PersonaServService {
     return this.http.get<Persona>(`${this.URL}buscar/persona/${this.id}`);
    
   }
+  savePersona(personaNueva:Persona){
+    this.http.post(`${this.URL}/editar/persona/`,personaNueva)
+    console.log("entró a savePersona")
+  }
+  deletePersona(x:number){
+    this.http.delete(`${this.URL}/delete/${x}`);
+  }
 
   constructor(private http:HttpClient) { }
 }

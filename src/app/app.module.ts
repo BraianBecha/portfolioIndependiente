@@ -19,6 +19,7 @@ import{HttpClient, HttpClientModule} from '@angular/common/http';
 import { ProyectoServService } from './servicios/proyecto-serv.service';
 import { NotFoundComponentComponent } from './component/not-found-component/not-found-component.component';
 import { SkillComponent } from './component/skill/skill.component';
+import { FormEditPerfilComponent } from './formPerfil/form-edit-perfil/form-edit-perfil.component';
 
 
 
@@ -34,7 +35,8 @@ import { SkillComponent } from './component/skill/skill.component';
     ToolbarComponent,
     BannerComponent,
     PieComponent,
-    SkillComponent
+    SkillComponent,
+    FormEditPerfilComponent
   ],
   imports: [
     

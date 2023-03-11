@@ -1,0 +1,45 @@
+<form [formGroup]="personaNueva">
+    <div class="form-group">
+        <label for="id">Id</label>
+        <input [ngModel]="persona.id" type="number" class="form-control" name="id" id="id" value="{{persona.id}}">
+      </div>
+    
+    <div class="form-group"  (ngSubmit)="onSubmit(personaNueva.value)">
+      <label for="nombre">Nombre</label>
+      <input  [(ngModel)]="personaNueva.nombre"  type="text" class="form-control" name="nombre" id="nombre"  value="{{persona.nombre}}">
+    </div>
+    <div class="form-group">
+        <label for="apellido">Apellido</label>
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="persona.apellido"  type="text" class="form-control" name="apellido" id="apellido"  value="{{persona.apellido}}">
+      </div>
+      <div class="form-group">
+        <label for="nacionalidad">Nacionalidad</label>
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="persona.nacionalidad"  type="text" class="form-control" name="nacionalidad" id="nacionalidad"  value="{{persona.nacionalidad}}">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="persona.mail"  type="email" class="form-control" name="email" id="email" aria-describedby="emailHelp" value="{{persona.mail}}">
+        <small id="emailHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="sobre_mi">Sobre mí</label>
+        <textarea [ngModelOptions]="{standalone: true}" [(ngModel)]="persona.sobre_mi"  class="form-control" name="sobre_mi" id="sobre_mi" value="{{persona.sobre_mi}}" rows="3" ></textarea>
+      </div>
+      <div class="form-group">
+        <label for="ocupacion">Ocupacion</label>
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="persona.ocupacion"  type="text" class="form-control" name="ocupacion" id="ocupacion"  value="{{persona.ocupacion}}">
+      </div>
+      <div class="form-group">
+        <label for="image_background_header">Link Img Banner</label>
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="persona.image_background_header"  type="text" class="form-control" name="image_background_header" id="image_background_header"  value="{{persona.image_background_header}}">
+      </div>
+      <div class="form-group">
+        <label for="imagen_perfil">Link Img Perfil</label>
+        <input [ngModelOptions]="{standalone: true}" [(ngModel)]="persona.imagen_perfil"  type="text" class="form-control" name="imagen_perfil" id="imagen_perfil"  value="{{persona.imagen_perfil}}">
+      </div>
+   
+
+    
+    <button type="submit" class="btn btn-warning" (click)="savePerfil()">Modificar</button>
+    <button type="submit" class="btn btn-danger" (click)="borrarPerfil()">Eliminar</button>
+  </form>

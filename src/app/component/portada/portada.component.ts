@@ -33,9 +33,5 @@ export class PortadaComponent implements OnInit {
    }
 
 
-   cambiar_parrafo(){
-    
-   }
-
 
 }

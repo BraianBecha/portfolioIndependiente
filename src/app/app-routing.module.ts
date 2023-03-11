@@ -8,6 +8,7 @@ import { EducacionComponent } from './component/educacion/educacion.component';
 import { ExperienciaComponent } from './component/experiencia/experiencia.component';
 import { SkillComponent } from './component/skill/skill.component';
 import { AppComponent } from './app.component';
+import { FormEditPerfilComponent } from './formPerfil/form-edit-perfil/form-edit-perfil.component';
 
 
 
@@ -19,6 +20,7 @@ const appRoutes: Routes = [
   { path: 'educacion', component: EducacionComponent },
   { path: 'experiencia', component: ExperienciaComponent },  
   { path:'iniciar-sesion', component: IniciarSesionComponent},  
+  { path:'editar-perfil', component: FormEditPerfilComponent},  
   { path: '**', component:NotFoundComponentComponent} 
 ];
 
