@@ -9,7 +9,7 @@ import { Educacion } from '../model/educacion';
   providedIn: 'root'
 })
 export class EducacionServService {
-URL='http://localhost:8080/';
+URL='https://springboot-yoprogramo-braianbecha.onrender.com/';
    
 
   

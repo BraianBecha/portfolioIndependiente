@@ -8,7 +8,7 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillserviceService {
-URL ='http://localhost:8080/';
+URL ='https://springboot-yoprogramo-braianbecha.onrender.com/';
 
 getskills():Observable<Skill[]>{
   //return this.http.get<Skill[]>(`${this.URL}"/ver/skills"`)

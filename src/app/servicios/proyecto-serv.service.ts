@@ -19,7 +19,7 @@ const httpOptions = {
 export class ProyectoServService {
 
 
-URL='http://localhost:8080/';
+URL='https://springboot-yoprogramo-braianbecha.onrender.com/';
 
 
   getProyectos(): Observable<Proyecto[]>{

@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ExperienciaServService {
-  URL='http://localhost:8080/';
+  URL='https://springboot-yoprogramo-braianbecha.onrender.com/';
 
 
   getExperiencias(): Observable<Experiencia[]>{
